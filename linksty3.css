@@ -10,7 +10,7 @@ body
 	margin: 0px auto; padding: 5px;
         text-align: left; /* Counteract to IE/Win Hack */
 	border:1px dashed #333;
-	-color:#eee
+	-color:#000000
          }    
 
 
@@ -33,7 +33,7 @@ ul#mainNav {
 
 #mainNav a {
 	text-decoration: none;
-	color: #F0F8FF;
+	color: #000000;
 	font-size: 11px;
 	border: 1px dashed #999999;
 	border-bottom: none;
@@ -44,12 +44,12 @@ ul#mainNav {
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #F0F8FF url(go.png) no-repeat 5px 50%;
+	background: #F0F8FF url(images/go.png) no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #F0F8FF url(home.png) no-repeat 5px 52%;
+	background: #F0F8FF url(images/home.png) no-repeat 5px 52%;
 }
 
 
