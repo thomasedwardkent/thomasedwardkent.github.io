@@ -16,6 +16,31 @@ body
 /* NAVIGATION */
 
 
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #13b7f6 url("images/link.png") no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #13b7f6 url("images/home.png") no-repeat 5px 52%;
+}
+
+
+
+
+
 ul#mainNav {
 
 	padding: 0;
@@ -63,7 +88,7 @@ a#homeLink {
 h2 {
 
 background-image: url('images/background.jpg');
-color: #fff;
+color: #000000;
 text-align: center;
 margin-top: 20px;
 margin-left: 170px;
