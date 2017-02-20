@@ -24,17 +24,17 @@ body
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background: #13b7f6 url("images/link.png") no-repeat left center;
+	background: #fff url("images/link.png") no-repeat left center;
 }
 
 #mainNav a:hover {
 	font-weight: bold;
-		background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
+		background: #fff url("images/go.png") no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #13b7f6 url("images/home.png") no-repeat 5px 52%;
+	background: #fff url("images/home.png") no-repeat 5px 52%;
 }
 
 
