@@ -53,11 +53,12 @@ ul#mainNav {
 #mainNav li {
 	float: left;
 	width: 12em;
+	color: #13b7f6;
 }
 
 #mainNav a {
 	text-decoration: none;
-	color: #000000;
+	color: #13b7f6;
 	font-size: 11px;
 	border: 1px dashed #999999;
 	border-bottom: none;
