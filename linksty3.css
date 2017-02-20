@@ -39,17 +39,17 @@ ul#mainNav {
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background: #000000 url("link.png") no-repeat left center;
+	background: #13b7f6 url("images/link.png") no-repeat left center;
 }
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #000000 url("images/go.png") no-repeat 5px 50%;
+	background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #000000 url("images/home.png") no-repeat 5px 52%;
+	background: #13b7f6 url("images/home.png") no-repeat 5px 52%;
 }
 
 
