@@ -1,0 +1,151 @@
+body 
+      {margin-top: 20px; background-color: #000000;
+       text-align:center; /* Hack for IE/Win */ 
+      }
+
+
+#content {
+	width:950px;
+	margin: 0px auto; padding: 5px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	border:1px dashed #333;
+	-color:#eee
+         }    
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #a020f01 url(link.png) no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #a020f01 url(go.png) no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #a020f0 url(home.png) no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+h2 {
+
+background-image: url('background.jpg');
+color: #000011;
+text-align: center;
+margin-top: 20px;
+margin-left: 170px;
+margin-right: 170px;
+font-weight: bold; font-style:normal; font-variant:normal; font-size:22pt; font-family:Arial
+}
+
+
+p.main  {
+font: 14pt 'Times New Roman';
+color: #010100;
+background: #ff5511;
+text-indent: .5in;
+margin-left: 80px;
+margin-right: 80px;
+text-align: justify;
+border: solid;
+padding: 10px;
+}
+
+
+p.lil {
+font-size: 20pt;
+text-align: center;
+font-weight: bold;
+margin-left: 480px;
+margin-right: 480px;
+font-variant: small-caps;
+color: #a02111;
+background: #555500;
+}
+
+
+#new  {
+font-family: 'Comic Sans ms';
+padding: 15px;
+line-height: 40pt;
+border-style: ridge;
+border: 3px solid black;
+background-color: #deb887;
+font-size: 12pt;color: #ff0000;
+text-align: justify;
+font-weight: bold;
+margin-left: 500px;
+margin-right: 600px;
+width: 600px;
+      }
+      
+      #newext  {
+font-family: 'Windings';
+padding: 23px;
+line-height: 23pt;
+border-style: indent;
+border: 4px solid white;
+background-color: #deb117;
+font-size: 14pt;color: #ff110;
+text-align: center;
+font-weight: italic;
+margin-left: 200px;
+margin-right: 200px;
+width: 400px;
+      }
+
+a {
+
+color: #0000ff; text-decoration: none;
+}
+
+
+a:hover { color:#a020f0;
+text-decoration: underline;
+background-color: cyan;
+}
+
+
+address 
+{
+font-family: Times New Roman;
+font-size: 14pt;
+font-weight: bold;
+color: #000000;
+}
+
+
+.center {text-align: center;}
