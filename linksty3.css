@@ -39,17 +39,17 @@ ul#mainNav {
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background: #F0F8FF url(link.png) no-repeat left center;
+	background: #000000 url("link.png") no-repeat left center;
 }
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #F0F8FF url(images/go.png) no-repeat 5px 50%;
+	background: #000000 url("images/go.png") no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #F0F8FF url(images/home.png) no-repeat 5px 52%;
+	background: #000000 url("images/home.png") no-repeat 5px 52%;
 }
 
 
@@ -75,12 +75,12 @@ font-weight: bold; font-style:normal; font-variant:normal; font-size:22pt; font-
 
 p.main  {
 font: 14pt 'Times New Roman';
-color: #010100;
-background: #ff5511;
+color: #000000;
+background: #00FFFF;
 text-indent: .5in;
 margin-left: 80px;
 margin-right: 80px;
-text-align: justify;
+text-align: center;
 border: solid;
 padding: 10px;
 }
@@ -93,8 +93,8 @@ font-weight: bold;
 margin-left: 480px;
 margin-right: 480px;
 font-variant: small-caps;
-color: #a02111;
-background: #555500;
+color: #000000;
+background: #00FFFF;
 }
 
 
@@ -104,8 +104,8 @@ padding: 15px;
 line-height: 40pt;
 border-style: ridge;
 border: 3px solid black;
-background-color: #deb887;
-font-size: 12pt;color: #ff0000;
+background-color: #000000;
+font-size: 12pt;color: #00FFFF;
 text-align: justify;
 font-weight: bold;
 margin-left: 500px;
@@ -119,8 +119,8 @@ padding: 23px;
 line-height: 23pt;
 border-style: indent;
 border: 4px solid white;
-background-color: #deb117;
-font-size: 14pt;color: #ff110;
+background-color: #000000;
+font-size: 14pt;color: #00FFFF;
 text-align: center;
 font-weight: italic;
 margin-left: 200px;
@@ -134,7 +134,7 @@ color: #0000ff; text-decoration: none;
 }
 
 
-a:hover { color:#a020f0;
+a:hover { color:#ff0000;
 text-decoration: underline;
 background-color: cyan;
 }
@@ -145,7 +145,7 @@ address
 font-family: Times New Roman;
 font-size: 14pt;
 font-weight: bold;
-color: #000000;
+color: #ff0000;
 }
 
 
