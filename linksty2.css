@@ -43,7 +43,7 @@ ul#mainNav {
 
 #mainNav a:hover {
 	font-weight: bold;
-	background-image: url(go.png) no-repeat 5px 50%;
+	
 }
 
 /* special formatting for home page link */
