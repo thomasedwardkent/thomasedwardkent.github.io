@@ -18,7 +18,7 @@ body
 
 #mainNav a {
 	text-decoration: none;
-	color: #fff;
+	color: #000000;
 	font-size: 11px;
 	border: 1px dashed #999999;
 	border-bottom: none;
@@ -29,7 +29,7 @@ body
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
+		background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
@@ -89,7 +89,7 @@ a#homeLink {
 h2 {
 
 background-image: url('images/background.jpg');
-color: #000000;
+color: #fff;
 text-align: center;
 margin-top: 20px;
 margin-left: 170px;
