@@ -38,7 +38,7 @@ ul#mainNav {
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background-image: url(go.png);
+;
 }
 
 #mainNav a:hover {
@@ -48,7 +48,7 @@ ul#mainNav {
 
 /* special formatting for home page link */
 a#homeLink {
-	background-image: url(home.png) no-repeat 5px 52%;
+	;
 }
 
 
@@ -116,12 +116,12 @@ width: 600px;
 font-family: 'Windings';
 padding: 23px;
 line-height: 23pt;
-border-style: indent;
+border-style: ridge;
 border: 4px solid black;
 background-color: #deb117;
-font-size: 14pt;color: #ff110;
+font-size: 14pt;color: #ff0000;
 text-align: justify;
-font-weight: italic;
+font-weight: bold;
 margin-left: 80px;
 margin-right: 80px;
 width: 400px;
