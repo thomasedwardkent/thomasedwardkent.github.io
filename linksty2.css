@@ -32,7 +32,7 @@ ul#mainNav {
 
 #mainNav a {
 	text-decoration: none;
-	color: #fff;
+	color: #000000;
 	font-size: 11px;
 	border: 1px dashed #999999;
 	border-bottom: none;
@@ -63,7 +63,7 @@ a#homeLink {
 h2 {
 
 background-image: url('images/background.jpg');
-color: #000011;
+color: #fff;
 text-align: center;
 margin-top: 20px;
 margin-left: 170px;
