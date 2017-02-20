@@ -32,23 +32,23 @@ ul#mainNav {
 
 #mainNav a {
 	text-decoration: none;
-	color: #000000;
+	color: #F0F8FF;
 	font-size: 11px;
 	border: 1px dashed #999999;
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background: #a020f01 url(link.png) no-repeat left center;
+	background: #F0F8FF url(link.png) no-repeat left center;
 }
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #a020f01 url(go.png) no-repeat 5px 50%;
+	background: #F0F8FF url(go.png) no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #a020f0 url(home.png) no-repeat 5px 52%;
+	background: #F0F8FF url(home.png) no-repeat 5px 52%;
 }
 
 

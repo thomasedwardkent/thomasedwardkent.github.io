@@ -1,5 +1,5 @@
 body 
-      {margin-top: 20px; background-color: #000000;
+      {margin-top: 20px; background-color: #F0F8FF;
        text-align:center; /* Hack for IE/Win */ 
       }
 
@@ -38,17 +38,17 @@ ul#mainNav {
 	border-bottom: none;
 	display: block;
 	padding: 7px 5px 2px 30px;
-	background: #a020f01 url(link.png) no-repeat left center;
+	background-image: url(go.png);
 }
 
 #mainNav a:hover {
 	font-weight: bold;
-	background: #a020f01 url(go.png) no-repeat 5px 50%;
+	background-image: url(go.png) no-repeat 5px 50%;
 }
 
 /* special formatting for home page link */
 a#homeLink {
-	background: #a020f0 url(home.png) no-repeat 5px 52%;
+	background-image: url(home.png) no-repeat 5px 52%;
 }
 
 
