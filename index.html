@@ -1,288 +1,226 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <meta charset="utf-8">
 
-<title>Embedded Style Sheet Example</title>
+<title>Table of CNIT 132 Homework Assignments</title>
+
+<!--   In CSS, coments are within /*....*/  and CSS rules are within {....} -->
 
 <style>
 
-body {
-     background-color: #000009;
-     text-align:center; /* Hack for IE/Win */ 
-     margin-top: 10px;
-     }
+
+/* set font to arial, if not found then helvetica */
+/* set background image */
+
+body { 
+      font-family: arial, helvetica; 
+      background: url('stucgrey.gif');
+      text-align: center;
+   }
+
+.body{ width: 700px;     
+    margin: 0 auto;
+    text-align: left; 
+        /* IE hack */
+       }
 
 
-/* NAVIGATION */
+li.nav { font-size: 10pt; display: inline; padding: 10px; 
+      margin: 0px auto; background-color: #f5f5dc; }
+
+/* set links without underline */
+
+a { text-decoration: none; }
 
 
-ul#mainNav {
-     
-	padding: 0;
-	list-style: none;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: 160px; 
-}
+/* on user's hover over a link, change color to black, give underline, give background color of yellow */
 
-#mainNav li {
-	float: left;
-	width: 12em;
-}
-
-#mainNav a {
-	text-decoration: none;
-	color: #000000;
-	font-size: 11px;
-       
-	border: 1px dashed #999999;
-	border-bottom: none;
-	display: block;
-	padding: 7px 5px 2px 30px;
-	background: #E7E7E7 url(images/link.png) no-repeat left center;
-}
-
-#mainNav a:hover {
-	font-weight: bold;
-	background: #B2F511 url(images/go.png) no-repeat 5px 50%;
-}
-
-/* special formatting for home page link */
-a#homeLink {
-	background: #E7E7E7 url(images/home.png) no-repeat 5px 52%;
-}
+a:hover {color: #000000; text-decoration: underline; background-color: yellow;}
 
 
+tr {text-align: left;}
+ 
+/* For main HW Assignment table, embellish the border of the table, 
+set width and alignment */
 
-/* IE Fixes */
+table.main {
+       width: 750px;
+       background-color: #f5f5dc;
+       padding: 5px;
+       border-collapse: collapse;
+       border: solid 2px; 
+       border-top-color: #0000ff;
+       border-left-color: yellow;
+       border-bottom-color: #0000ff;
+       border-right-color: yellow;
 
-/* force hover on entire width of  link */
-* html #mainNav a {
-	height: 1px;
-}
+           }
 
+/*  For main HW Assignment table header, embellish with background, font size, and color */
 
-
-.content {
-	width:950px;
-
-	margin: 0px auto; padding: 10px;
-        text-align: left; /* Counteract to IE/Win Hack */
-	
-	background-color:#eee;
-         }    
-
-
-
-.pol { 
-	 text-align: center;
-         font-size: 24px;
-	   }
+tr.head {background-color: #000000; font-size: 12pt; color: #ffff00;}
 
 
-h1 {
+/* gives color of red to HW2 */
 
-font:  26pt 'Lucida Sans Typewriter';
-color: #8e0052;
-text-align: center;
-}
+td.hw2 { color: #ff0000; }
 
+/*  For main HW Assignment table footer, embellish with background, font size, and color */
 
-h2 {
+td.foot {background-color: #000000; font-size: 10pt; color: #ffff00; text-align: center;}
 
-font:  20pt News Gothic MT;
-color: 	#00FFFF;
-text-align: left;
-}
+tr.white {background-color: white;}
 
+td { border: 1px solid; padding: 5px; text-align: left;}
 
-h3 {
+th { font-family: 'Tangerine', serif; font-size: 24px; text-align: center;}
 
-font-family: MS Reference Sans Serif;
-font-size: 14pt;
-color: #ee00ee;
-text-align: right;
-}
-
-h4 {
-
-font-family: Palatino;
-font-size: 12pt;
-color: #ee00ee;
-text-align: center;
-}
-
-h5 {
-
-font-family: Palatino;
-font-size: 14pt;
-color: #ee00ee;
-text-align: center;
-}
-
-
-p.left  {
-
-font-family: PT Mono;
-font-size: 8pt; 
-color: #ee00ee;
-text-align: left;
-font-weight: bold;
-text-indent: .8in;
-}
-
-
-p.right  {
-font-family: PT Mono;
-font-size: 8pt; 
-color: #222222;
-text-align: left;
-background-color: #eeeee0;
-border-style: dashed;
-border-color: #a120e1;
-padding: 3em;
-}
-
-p.ital  {
-
-font-family: Avenir;
-font-size: 12pt;
-color: #9c3ece;
-text-align: justify;
-font-weight: bold;
-font-style: italic;
-}
-
-
-a {
-
-color: #0000ff; 
-text-decoration: none;
-}
-
-a:hover { color:#8f0052;
-text-decoration: underline;
-background-color: yellow;
-}
-
-p.new	{
-
-font-family: papyrus;
-font-size: 12pt; 
-color: #123456;
-text-align: center;
-background-color: #654321;
-border-style: solid;
-border-color: #a199e1;
-padding: 4em;
-}
-
-
-
-
-.center {text-align: center;}
-
+.f {margin: 0px auto; width: 200px;}
 
 </style>
 
-</head>
 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+
+
+</head>
 
 <body>
 
 
-<div class="content">
+<nav>
 
-<section>
+<ul>
+<li class="nav"><a href="index.html">HW1</a></li>
+<li class="nav"><a href="hw2.html">HW2</a></li>
+<li class="nav">HW3</li>
+<li class="nav"><a href="hw4.html">HW4</a></li>
+<li class="nav"><a href="hw5.html">HW5</a></li>
+<li class="nav"><a href="hw6.html">HW6</a></li>
+<li class="nav"><a href="hw7.html">HW7</a></li>
+<li class="nav"><a href="hw8.html">HW8</a></li>
+<li class="nav"><a href="hw9.html">HW9</a></li>
+</ul>
 
-
-
-  <ul id="mainNav">
-
-    <li><a href="index.html" target="_self" id="homeLink">Embedded Style Sheet (This Page)</a></li>
-    <li><a href="page2.html" target="_self">Linked Style Sheet 1</a></li>
-    <li><a href="page3.html" target="_self">Linked Style Sheet 2</a></li>
-    
-  </ul>
-
-
-<br>
-
-<h1>Embedded Style Sheet Example</h1>
+</nav>
 
 
-<p class="pol">The politics of the 21st century</p>
-
-<h2>Lefties and Righties</h2>
+<section class="body">
 
 
-<p class="left">
 
-Socialists are to the left of liberals.
- Most liberals are Democrats, although some have
-wandered over to the Green party. Republicans are right-wingers. 
-Most Republicans are 
-conservative. What does conservative mean? Do they want to
-conserve the environment? Do they want to conserve the 2nd amendment?
-Do they want to conserve a woman's right to choose an abortion?
- Do they want to conserve a separation between church and state?
+<!-- class="main" calls in CSS rules for table borders -->
 
-<a href="http://www.microsoft.com">Click here</a>
-for Bill Gates.</p>
+<table class="main">
 
+<tr class="white">
+<th colspan="4">Table of CNIT 132 Homework Assignments</th>
+</tr>
 
-<h3>San Francisco Giants</h3>
+<!-- class="head" calls in CSS rules for table header -->
 
-<p class="right">
-
-It may just be that the Giants have seen the last of Hunter Pence this season, and what a 
-loss it will be. Pence is not only the offensive catalyst, but his presence both on the 
-field and in the clubhouse is immense. Right now, the right fielder has been relegated to 
-the dugout, and that may not change any time soon as he re-injured his surgically repaired hamstring muscle a few days ago. 
-The Giants are now just one game behind the first-place Dodgers in the National League West entering the games of Aug. 27. 
-
-<a href="http://www.sfgiants.com">Click here</a> for your 
-San Francisco Giants!
-</p>
-
-<h4>Personal Responsibility</h4>
-
-<p class="ital">
-The name of the game is personal responsibility. That means that you
-just need to take care of yourself and not
-care about things like community involvement, poor people, or 
-the obscene gap between the rich and poor in this country.
-</p>
+<tr class="head">  
+<th>Homework Assignment</th>
+<th>Due Date</th> 
+<th>Date Approved</th>
+<th>Notes and Difficulties</th>
+</tr>
 
 
-<h5>This header and the paragraph below are my additions.</h5>
+ 
+<tr>
+<td><b><a href="index.html">HW 1 - Basic Web Site</a></b></td>
+<td>August ..</td>
+<td>August ..</td> 
+<td>unix permissions, color contrast</td> 
+</tr>
+  
 
-<p class="new">
-This is my paragraph. After some work it displays properly!
-</p>
 
-<p>
-<a href="https://thomasedwardkent.github.io/page2.html">Linked Style Sheet 1</a>
-</p>
+<!-- class=hw2 calls in CSS rules for HW2 detail entry -->
 
-<p>
-<a href="https://thomasedwardkent.github.io/page3.html">Linked Style Sheet 2</a>
-</p>
+<tr>
+<td><a href="hw2.html"><b>HW 2 - Style Sheets I</b></a></td>
+<td>September  ..</td>
+<td>September  ..</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td class="hw3"><b>HW 3 - Homework List</b></td>
+<td>September  ..</td> 
+<td>September  ..</td>
+<td>&nbsp;</td> 
+</tr>
+
+
+  
+<tr>
+<td><a href="hw4.html"><b>HW 4 - Graphics</b></a></td>
+<td>October ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw5.html"><b>HW 5 - Multimedia</b></a></td>
+<td>October ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw6.html"><b>HW 6 - Style Sheets II</b></a></td>
+<td>October ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td><a href="hw7.html"><b>HW 7 - Forms</b></a></td>
+<td>November ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw8.html"><b>HW 8 - CGI Scripts</b></a></td>
+<td>November ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+ 
+<tr>
+<td><a href="hw9.html"><b>HW 9 - JavaScript</b></a></td>
+<td>December ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td colspan="4" class="foot">
+&copy; Steve Rubin 2016 - All rights reserved</td>
+</tr>
+
+</table>
+
 
 </section>
 
-</div>
+<footer class="f">
 
-<footer>
-
-<p class="center">
- 
+<p>
 <a href="https://validator.w3.org/check?uri=referer">
-<img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+<img style="border:0;width:88px;height:31px" src="HTML5.gif"
 alt="HTML5"></a>
-
 
     <a href="https://jigsaw.w3.org/css-validator/check/referer">
         <img style="border:0;width:88px;height:31px"
@@ -290,7 +228,7 @@ alt="HTML5"></a>
             alt="Valid CSS!">
     </a>
 </p>
-     
+
 
 </footer>
 
