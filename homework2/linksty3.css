@@ -1,0 +1,155 @@
+body 
+      {margin-top: 20px; background-color: #F0F8FF;
+       text-align:left; /* Hack for IE/Win */ 
+       background-image: url("images/background.jpg");
+      }
+
+
+#content {
+	width:950px;
+	margin: 0px auto; padding: 5px;
+        text-align: left; /* Counteract to IE/Win Hack */
+	border:1px dashed #333;
+	-color:#000000
+         }    
+
+
+/* NAVIGATION */
+
+
+ul#mainNav {
+
+	padding: 0;
+	list-style: none;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 160px; 
+        
+}
+#mainNav li {
+	float: left;
+	width: 12em;
+}
+
+#mainNav a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 11px;
+	border: 1px dashed #999999;
+	border-bottom: none;
+	display: block;
+	padding: 7px 5px 2px 30px;
+	background: #13b7f6 url("images/link.png") no-repeat left center;
+}
+
+#mainNav a:hover {
+	font-weight: bold;
+	background: #13b7f6 url("images/go.png") no-repeat 5px 50%;
+}
+
+/* special formatting for home page link */
+a#homeLink {
+	background: #13b7f6 url("images/home.png") no-repeat 5px 52%;
+}
+
+
+
+/* IE Fixes */
+
+/* force hover on entire width of  link */
+* html #mainNav a {
+	height: 1px;
+}
+
+h2 {
+
+color: #fff;
+text-align: left;
+margin-top: 20px;
+margin-left: 1px;
+margin-right: 1px;
+font-weight: bold; font-style:normal; font-variant:normal; font-size:22pt; font-family:Arial
+}
+
+
+p.main  {
+font: 14pt 'Times New Roman';
+color: #000000;
+background: #00FFFF;
+margin-left: 1px;
+margin-right: 1px;
+text-align: left;
+border: solid;
+padding: 1px;
+}
+
+
+p.lil {
+font-size: 20pt;
+text-align: left;
+font-weight: bold;
+margin-left: 1px;
+margin-right: 1px;
+font-variant: small-caps;
+border: solid;
+padding: 1pt;
+line-height: 10pt;
+border-style: ridge;
+color: #000000;
+background: #00FFFF;
+}
+
+
+#new  {
+font-family: 'Comic Sans ms';
+padding: 1px;
+line-height: 1pt;
+border-style: ridge;
+border: 3px solid black;
+background-color: #000000;
+font-size: 12pt;color: #00b8ff;
+line-height: 12pt;
+text-align: left;
+font-weight: bold;
+margin-left: 1px;
+margin-right: 1px;
+
+      }
+      
+      #newext  {
+font-family: 'Comic Sans ms';
+padding: 1px;
+line-height: 23pt;
+border-style: ridge;
+border: 4px solid black;
+background-color: #000000;
+font-size: 14pt;color: #ff0000;
+text-align: left;
+font-weight: bold;
+margin-left: 1px;
+margin-right: 1px;
+width: 1px;
+      }
+
+a {
+
+color: #fff; text-decoration: none;
+}
+
+
+a:hover { color:#ff0000;
+text-decoration: underline;
+background-color: cyan;
+}
+
+
+address 
+{
+font-family: Times New Roman;
+font-size: 14pt;
+font-weight: bold;
+color: #ff0000;
+}
+
+
+.center {text-align: left;}
