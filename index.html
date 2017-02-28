@@ -5,43 +5,57 @@
 <head>
 <meta charset="utf-8">
 
-<title>Thomas' CNIT 132 Homework Assignments</title>
+<title>Table of CNIT 132 Homework Assignments</title>
+
+<!--   In CSS, coments are within /*....*/  and CSS rules are within {....} -->
 
 <style>
 
+
+/* set font to arial, if not found then helvetica */
+/* set background image */
+
 body { 
-      font-family: times new roman; 
-      background-image: url("background.jpg");
-        background-attachment: fixed;
-       background-position: center; 
-      text-align: center;
+      font-family: arial, helvetica; 
+      background: url('stucgrey.gif');
+      text-align: center; 
+      /* IE hack */
    }
 
+.body { width: 700px;
+        margin: 0px auto; 
+        text-align: left; 
+        /* IE hack */
+   
+}
 
-/*
-.body { width: 1000px;     
-    margin: 0 auto;
-    text-align: center;  }
-*/
+nav {width: 410px;
+     margin: 0px auto; background-color: #f5f5dc;}
 
-li.nav { font-size: 10pt; display: inline; padding: 10px; 
-      margin: 0px auto; background-color: #f5f5dc; }
+/* set links without underline */
 
 a { text-decoration: none; }
 
 
+/* on user's hover over a link, change color to black, give underline, give background color of yellow */
+
+a:hover {color: #000000; text-decoration: underline; background-color: yellow;}
 
 
-a:hover {color: #000000; text-decoration: underline; background-color: white;}
+/* On Navigation Bar one-row table, make font-size = 10 pt */
 
 
-tr {text-align: center;}
+tr.nav { font-size: 10pt; }
 
+ 
+/* For main HW Assignment table, embellish the border of the table, 
+set width and alignment */
 
-table.center {
+table.main {
        margin-left:auto; 
        margin-right:auto;
-       <table class="center">
+       /* IE hack */
+       border-collapse: collapse;
        width: 750px;
        background-color: #f5f5dc;
        padding: 5px;
@@ -51,70 +65,83 @@ table.center {
        border-left-color: yellow;
        border-bottom-color: #0000ff;
        border-right-color: yellow;
-       table-position: center
-      	</table>
-  		body {text-align:center;}
            }
-    
+
+
 /*  For main HW Assignment table header, embellish with background, font size, and color */
 
 tr.head {background-color: #000000; font-size: 12pt; color: #ffff00;}
 
+td {text-align: left;}
 
 /* gives color of red to HW2 */
 
-td.hw2 { color: #ff0000; }
+td.hw3 { color: #ff0000; }
 
 /*  For main HW Assignment table footer, embellish with background, font size, and color */
 
-td.foot {background-color: #000000; font-size: 10pt; color: #ffff00; text-align: center;}
+td.foot {font-size: 10pt; color: #000000; text-align: center;}
 
-tr.white {background-color: white;}
+tr.c {text-align: center;}
 
-td { border: 1px solid; padding: 5px; text-align: left;}
+td { border: 1px solid; padding: 5px;}
 
-th { font-family: 'Tangerine', serif; font-size: 24px; text-align: center;}
 
-.f {margin: 0px auto; width: 200px;}
+/* the following is needed so that the table headers have Google API fonts -->
+th {
+        font-family: 'Tangerine', serif;
+        font-size: 24px;
+      }
+
+
+/* a table where every other row and every other column is striped 
+simultaneously ....see http://cssnewbie.com/example/zebra-tables/ */
+
+td:nth-of-type(odd),
+tr:nth-of-type(odd),
+th:nth-of-type(odd){
+  background:rgba(136,136,136,0.3); /* 0.3 = 30% opacity */
+}
+
+a:link, a:visited {color: blue;text-decoration: none;}
 
 </style>
 
+<!-- link to Google API stylesheet -->
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
 
 
 </head>
 
 <body>
 
+<section class="body">
+
 
 <nav>
 
-<ul>
-<li class="nav"><a href="index.html">HW1</a></li>
-<li class="nav"><a href="hw2.html">HW2</a></li>
-<li class="nav">HW3</li>
-<li class="nav"><a href="hw4.html">HW4</a></li>
-<li class="nav"><a href="hw5.html">HW5</a></li>
-<li class="nav"><a href="hw6.html">HW6</a></li>
-<li class="nav"><a href="hw7.html">HW7</a></li>
-<li class="nav"><a href="hw8.html">HW8</a></li>
-<li class="nav"><a href="hw9.html">HW9</a></li>
-</ul>
+<a href="index.html">HW1</a> | 
+
+<a href="hw2.html">HW2</a> |HW3 |
+<a href="hw4.html">HW4</a> |
+<a href="hw5.html">HW5</a>
+<a href="hw6.html">HW6</a> |
+<a href="hw7.html">HW7</a> |
+<a href="hw8.html">HW8</a> |
+<a href="hw9.html">HW9</a> 
 
 </nav>
 
 
-<section class="body">
-
-
+<br><br>
 
 <!-- class="main" calls in CSS rules for table borders -->
 
+
 <table class="main">
 
-<tr class="white">
+<tr class="c">
 <th colspan="4">Table of CNIT 132 Homework Assignments</th>
 </tr>
 
@@ -138,23 +165,22 @@ th { font-family: 'Tangerine', serif; font-size: 24px; text-align: center;}
   
 
 
-<!-- class=hw2 calls in CSS rules for HW2 detail entry -->
-
 <tr>
 <td><a href="hw2.html"><b>HW 2 - Style Sheets I</b></a></td>
-<td>September  ..</td>
-<td>September  ..</td>
-<td>&nbsp;</td> 
+<td>September 14</td>
+<td>September  14</td>
+<td>page centering</td> 
 </tr>
+
+
+<!-- class="hw3" calls in CSS rules for HW3 detail entry -->
 
 <tr>
 <td class="hw3"><b>HW 3 - Homework List</b></td>
-<td>September  ..</td> 
+<td>September 23</td> 
 <td>September  ..</td>
 <td>&nbsp;</td> 
 </tr>
-
-
   
 <tr>
 <td><a href="hw4.html"><b>HW 4 - Graphics</b></a></td>
@@ -209,19 +235,17 @@ th { font-family: 'Tangerine', serif; font-size: 24px; text-align: center;}
 </table>
 
 
+
 </section>
 
-
-</style>
-
-<footer class="f">
+<footer class="foot">
 
 <p>
 <a href="https://validator.w3.org/check?uri=referer">
-<img style="border:0;width:88px;height:31px" src="HTML5.png"
+<img style="border:0;width:88px;height:31px" src="HTML5.gif"
 alt="HTML5"></a>
 
-    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+    <a href="https://jigsaw.w3.org/css-validator/check/referer?profile=css3">
         <img style="border:0;width:88px;height:31px"
             src="http://jigsaw.w3.org/css-validator/images/vcss"
             alt="Valid CSS!">
