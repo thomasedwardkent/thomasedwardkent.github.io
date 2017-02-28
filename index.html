@@ -20,6 +20,191 @@ body {
     text-align: left; 
                }
 
+li.nav { font-size: 10pt; display: inline; padding: 10px; 
+      margin: 0px auto; background-color: #f5f5dc; }
+
+/* set links without underline */
+
+a { text-decoration: none; }
+
+
+/* on user's hover over a link, change color to black, give underline, give background color of yellow */
+
+a:hover {color: #000000; text-decoration: underline; background-color: yellow;}
+
+
+tr {text-align: left;}
+ 
+/* For main HW Assignment table, embellish the border of the table, 
+set width and alignment */
+
+table.main {
+       width: 750px;
+       background-color: #f5f5dc;
+       padding: 5px;
+       border-collapse: collapse;
+       border: solid 2px; 
+       border-top-color: #0000ff;
+       border-left-color: yellow;
+       border-bottom-color: #0000ff;
+       border-right-color: yellow;
+
+           }
+
+/*  For main HW Assignment table header, embellish with background, font size, and color */
+
+tr.head {background-color: #000000; font-size: 12pt; color: #ffff00;}
+
+
+/* gives color of red to HW2 */
+
+td.hw2 { color: #ff0000; }
+
+/*  For main HW Assignment table footer, embellish with background, font size, and color */
+
+td.foot {background-color: #000000; font-size: 10pt; color: #ffff00; text-align: center;}
+
+tr.white {background-color: white;}
+
+td { border: 1px solid; padding: 5px; text-align: left;}
+
+th { font-family: 'Tangerine', serif; font-size: 24px; text-align: center;}
+
+.f {margin: 0px auto; width: 200px;}
+
+</style>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+
+
+
+</head>
+
+<body>
+
+
+<nav>
+
+<ul>
+<li class="nav"><a href="index.html">HW1</a></li>
+<li class="nav"><a href="hw2.html">HW2</a></li>
+<li class="nav">HW3</li>
+<li class="nav"><a href="hw4.html">HW4</a></li>
+<li class="nav"><a href="hw5.html">HW5</a></li>
+<li class="nav"><a href="hw6.html">HW6</a></li>
+<li class="nav"><a href="hw7.html">HW7</a></li>
+<li class="nav"><a href="hw8.html">HW8</a></li>
+<li class="nav"><a href="hw9.html">HW9</a></li>
+</ul>
+
+</nav>
+
+
+<section class="body">
+
+
+
+<!-- class="main" calls in CSS rules for table borders -->
+
+<table class="main">
+
+<tr class="white">
+<th colspan="4">Table of CNIT 132 Homework Assignments</th>
+</tr>
+
+<!-- class="head" calls in CSS rules for table header -->
+
+<tr class="head">  
+<th>Homework Assignment</th>
+<th>Due Date</th> 
+<th>Date Approved</th>
+<th>Notes and Difficulties</th>
+</tr>
+
+
+ 
+<tr>
+<td><b><a href="index.html">HW 1 - Basic Web Site</a></b></td>
+<td>August ..</td>
+<td>August ..</td> 
+<td>unix permissions, color contrast</td> 
+</tr>
+  
+
+
+<!-- class=hw2 calls in CSS rules for HW2 detail entry -->
+
+<tr>
+<td><a href="hw2.html"><b>HW 2 - Style Sheets I</b></a></td>
+<td>September  ..</td>
+<td>September  ..</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td class="hw3"><b>HW 3 - Homework List</b></td>
+<td>September  ..</td> 
+<td>September  ..</td>
+<td>&nbsp;</td> 
+</tr>
+
+
+  
+<tr>
+<td><a href="hw4.html"><b>HW 4 - Graphics</b></a></td>
+<td>October ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw5.html"><b>HW 5 - Multimedia</b></a></td>
+<td>October ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw6.html"><b>HW 6 - Style Sheets II</b></a></td>
+<td>October ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td><a href="hw7.html"><b>HW 7 - Forms</b></a></td>
+<td>November ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+  
+<tr>
+<td><a href="hw8.html"><b>HW 8 - CGI Scripts</b></a></td>
+<td>November ..</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+ 
+<tr>
+<td><a href="hw9.html"><b>HW 9 - JavaScript</b></a></td>
+<td>December ..</td>
+
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+</tr>
+
+<tr>
+<td colspan="4" class="foot">
+&copy; Steve Rubin 2016 - All rights reserved</td>
+</tr>
+
+</table>
+
+
+</section>
 
 
 </style>
