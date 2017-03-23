@@ -1,0 +1,12 @@
+<img src="Untitled" width="515" height="254" border="0" usemap="#map" />
+
+<map name="map">
+<!-- #$-:Image map file created by GIMP Image Map plug-in -->
+<!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
+<!-- #$-:Please do not edit lines starting with "#$" -->
+<!-- #$VERSION:2.3 -->
+<!-- #$AUTHOR:Thomas Kent -->
+<area shape="rect" coords="55,85,163,181" href="http://www.google.com" />
+<area shape="circle" coords="271,133,43" href="http://www.google.com" />
+<area shape="poly" coords="416,86,364,108,402,176,475,172,475,140,453,119,440,105" href="http://www.google.com" />
+</map>
