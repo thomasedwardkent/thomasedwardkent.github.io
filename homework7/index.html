@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<title>Thomas's Feedback Form</title>
+
+
+<style>
+ 
+body 
+     {
+      background: url("homework7/images/white.jpg");
+      font-family: "arial";
+
+     }
+
+
+.body { width: 1000px;
+      margin: 2px auto;       
+      background-color: #FFFFFF;
+      padding: 12px;
+}
+
+
+
+.top  {width: 800px; border: dashed; padding: 5px; text-align: justify; 
+background-color: #C0C0C0; font-size: 10px; font-weight: italic; margin: 2px auto;}
+
+.s
+     {
+     font-size: 12pt;
+     }    
+
+.req 
+     {
+     background-color: azure;
+     } 
+
+td.tab  {font-size: 8pt; font-weight: italic;}
+
+
+/* Header shadow */
+
+#shadow
+{       text-align: center;
+	font-family: Arial;
+	color: #c60;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #000;
+}
+
+
+table.tabspace {padding: 6px;}
+
+
+
+
+.f 
+     {
+     font-size: 10pt;
+     font-weight: italic;
+     color: green; 
+     }   
+
+
+
+
+</style> 
+
+ 
+</head>
+
+<body>
+
+
+<header>
+
+
+<h2 id="shadow">Leave Your Feedback Here</h2>
+
+<br>
+
+<article>
+<p class="top">
+Thanks for your interest. Please fill out the following form, and then click the submit button.
+
+</p>
+</article> 
+
+
+
+<br>
+
+</header>
+
+
+<div class="body">
+
+<section>
+
+
+<form action="mailto:tkent@ccsf.edu" method="post" name="myform" id="myform" 
+autocomplete="on" enctype="text/plain">
+
+
+
+
+<fieldset>
+
+
+<legend class="f">Personal Information</legend>
+
+*Name:<br>
+<input type="text" size="45" maxlength="50" name="name" required  autofocus><br><br>
+
+<!-- input type email gives error message for incorrect email format -->
+
+*Email Address:<br>
+<input type="email" size="45" maxlength="50" required name="email">
+
+
+</fieldset>
+
+
+<br>
+*Enter the URL of your favorite Webpage: <input type="url" name="favUrl" required>
+
+<br><br>
+
+
+Your Occupation: 
+<select name="status">
+<option value=" ">-Choose one-</option>
+<option value="student">Student</option>
+<option value="teacher">Teacher</option>
+<option value="web_designer">Web Designer</option>
+<option value="programmer">Programmer</option>
+<option value="other">Other</option>
+</select>
+<br><br>
+
+
+Your Political Party: 
+<select name="party">
+<option value=" ">-Choose one-</option>
+<option value="dem">Democrat</option>
+<option value="rep">Republican</option>
+<option value="green">Green</option>
+<option value="independent">Independent</option>
+<option value="other">Other</option>
+</select>
+
+
+<br><br>
+You are interested in: <span class="s">(Choose all that apply)</span><br>
+
+<table class="tabspace">
+<tr>
+
+<td class="tab"><input type="checkbox" name="interest" value="web_design" checked>Web Design</td>
+
+<td class="tab"><input type="checkbox" name="interest"  value="internet_training">Internet Training</td>
+
+<td class="tab"><input type="checkbox"  name="interest" value="networks">Networks</td>
+
+
+<td class="tab"><input type="checkbox"  name="interest" value="unix">Unix</td>
+</tr>
+
+<tr>
+
+<td class="tab"><input type="checkbox"  name="interest" value="cisco">Cisco</td>
+
+<td class="tab"><input type="checkbox"  name="interest" value="programming">Programming</td>
+
+<td class="tab"><input type="checkbox"  name="interest" value="critical_thinking">Critical Thinking</td>
+
+<td class="tab"><input type="checkbox"  name="interest" value="philosophy">Philosophy</td>
+
+</tr>
+</table>
+
+
+
+<br>Your favorite Bay Area team is: <span class="s">(Choose only one)</span><br>
+
+
+<table class="tabspace">
+<tr>
+
+<td class="tab"><input type="radio" name="fan" value="Giants">San Francisco Giants</td>
+
+
+<td class="tab"><input type="radio" name="fan" value="49ers" checked>San Francisco 49ers</td>
+
+<td class="tab"><input type="radio" name="fan" value="Athletics">Oakland Athletics</td>
+
+</tr>
+
+<tr>
+
+<td class="tab"><input type="radio" name="fan" value="Raiders">Oakland Raiders</td>
+
+<td class="tab"><input type="radio" name="fan" value="Warriors">Golden Sate Warriors</td>
+
+ 
+<td class="tab"><input type="radio" name="fan" value="None">None of these</td>
+
+</tr>
+</table>
+
+
+<p style="font-size: 16px;">Comments/Questions</p>
+
+<textarea name="comments" rows="6" cols="71"></textarea><br>
+
+<input type="submit" value="SUBMIT">
+
+ 
+
+
+<input type="reset" value="RESET">
+
+</form>
+
+
+
+<p>
+<a href="https://validator.w3.org/check?uri=referer">
+<img style="border:0;width:88px;height:31px" src="HTML5.gif"
+alt="HTML5"></a>
+
+
+    <a href="https://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!">
+
+    </a>
+
+</p>
+
+
+
+</section>
+
+</div>
+
+</body>
+</html>
