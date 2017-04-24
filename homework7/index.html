@@ -61,7 +61,7 @@ table.tabspace {padding: 6px;}
      {
      font-size: 10pt;
      font-weight: italic;
-     color: green; 
+     color: black; 
      }   
 
 
@@ -78,13 +78,13 @@ table.tabspace {padding: 6px;}
 <header>
 
 
-<h2 id="shadow">Leave Your Feedback Here</h2>
+<h2 id="shadow">Survey</h2>
 
 <br>
 
 <article>
 <p class="top">
-Thanks for your interest. Please fill out the following form, and then click the submit button.
+Thanks for visiting! If you'd like, please fill out the following survey and tell us a little about yourself!
 
 </p>
 </article> 
@@ -104,13 +104,9 @@ Thanks for your interest. Please fill out the following form, and then click the
 <form action="mailto:tkent@ccsf.edu" method="post" name="myform" id="myform" 
 autocomplete="on" enctype="text/plain">
 
-
-
-
 <fieldset>
 
-
-<legend class="f">Personal Information</legend>
+<legend class="f">Contact Information</legend>
 
 *Name:<br>
 <input type="text" size="30" maxlength="50" name="name" required  autofocus><br><br>
@@ -121,97 +117,96 @@ autocomplete="on" enctype="text/plain">
 </fieldset>
 
 
-<br>
-*Enter the URL of your favorite Webpage: <input type="url" name="favUrl" required>
-
-<br><br>
-
-
-Your Occupation: 
+Your Favorite Food: 
 <select name="status">
 <option value=" ">-Choose one-</option>
-<option value="student">Student</option>
-<option value="teacher">Teacher</option>
-<option value="web_designer">Web Designer</option>
-<option value="programmer">Programmer</option>
+<option value="student">Pizza</option>
+<option value="teacher">Sushi</option>
+<option value="web_designer">Mexican</option>
+<option value="programmer">Chinese</option>
+<option value="other">Thai</option>
 <option value="other">Other</option>
 </select>
 <br><br>
 
 
-Your Political Party: 
-<select name="party">
-<option value=" ">-Choose one-</option>
-<option value="dem">Democrat</option>
-<option value="rep">Republican</option>
-<option value="green">Green</option>
-<option value="independent">Independent</option>
-<option value="other">Other</option>
-</select>
-
+<br><br>
 
 <br><br>
-You are interested in: <span class="s">(Choose all that apply)</span><br>
+Your Favorite Hobbies: <span class="s">(Select as many as you like!)</span><br>
 
 <table class="tabspace">
 <tr>
 
-<td class="tab"><input type="checkbox" name="interest" value="web_design" checked>Web Design</td>
+<td class="tab"><input type="checkbox" name="interest" value="web_design" checked>Sports</td>
 
-<td class="tab"><input type="checkbox" name="interest"  value="internet_training">Internet Training</td>
+<td class="tab"><input type="checkbox" name="interest"  value="internet_training">Board, Card, & Strategy Games</td>
 
-<td class="tab"><input type="checkbox"  name="interest" value="networks">Networks</td>
+<td class="tab"><input type="checkbox"  name="interest" value="networks">Exercise</td>
 
 
-<td class="tab"><input type="checkbox"  name="interest" value="unix">Unix</td>
+<td class="tab"><input type="checkbox"  name="interest" value="unix">Music</td>
 </tr>
 
 <tr>
 
-<td class="tab"><input type="checkbox"  name="interest" value="cisco">Cisco</td>
+<td class="tab"><input type="checkbox"  name="interest" value="cisco">Web Design</td>
 
-<td class="tab"><input type="checkbox"  name="interest" value="programming">Programming</td>
+<td class="tab"><input type="checkbox"  name="interest" value="programming">Reading</td>
 
-<td class="tab"><input type="checkbox"  name="interest" value="critical_thinking">Critical Thinking</td>
+<td class="tab"><input type="checkbox"  name="interest" value="critical_thinking">Other</td>
 
-<td class="tab"><input type="checkbox"  name="interest" value="philosophy">Philosophy</td>
+
 
 </tr>
 </table>
 
 
 
-<br>Your favorite Bay Area team is: <span class="s">(Choose only one)</span><br>
+<br>Your favorite Color: <span class="s"></span><br>
 
 
 <table class="tabspace">
 <tr>
 
-<td class="tab"><input type="radio" name="fan" value="Giants">San Francisco Giants</td>
+<td class="tab"><input type="radio" name="fan" value="Giants">Red</td>
 
 
-<td class="tab"><input type="radio" name="fan" value="49ers" checked>San Francisco 49ers</td>
+<td class="tab"><input type="radio" name="fan" value="49ers" checked>Orange</td>
 
-<td class="tab"><input type="radio" name="fan" value="Athletics">Oakland Athletics</td>
+<td class="tab"><input type="radio" name="fan" value="Athletics">Yellow</td>
 
 </tr>
 
 <tr>
 
-<td class="tab"><input type="radio" name="fan" value="Raiders">Oakland Raiders</td>
+<td class="tab"><input type="radio" name="fan" value="Raiders">Green</td>
 
-<td class="tab"><input type="radio" name="fan" value="Warriors">Golden Sate Warriors</td>
+<td class="tab"><input type="radio" name="fan" value="Warriors">Blue</td>
 
+<td class="tab"><input type="radio" name="fan" value="Raiders">Purple</td>
+
+<td class="tab"><input type="radio" name="fan" value="Warriors">White</td>
+<td class="tab"><input type="radio" name="fan" value="Warriors">Black</td>
+<td class="tab"><input type="radio" name="fan" value="Warriors">Brown</td>
  
-<td class="tab"><input type="radio" name="fan" value="None">None of these</td>
+<td class="tab"><input type="radio" name="fan" value="None">Other</td>
+<td class="tab"><input type="radio" name="fan" value="Warriors">I'm colorblind</td>
 
 </tr>
 </table>
 
 
-<p style="font-size: 16px;">Comments/Questions</p>
 
-<textarea name="comments" rows="6" cols="71"></textarea><br>
+
+<br>
+*Your Favorite Place to Travel: <input type="text" name="favorite place" required>
+
+
+
+<p style="font-size: 16px;">Questions & Comments</p>
+
+<textarea name="comments" rows="4" cols="60"></textarea><br>
 
 <input type="submit" value="SUBMIT">
 
