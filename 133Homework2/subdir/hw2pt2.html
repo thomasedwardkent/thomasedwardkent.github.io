@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="Homework 2" content="Homework 2">
+
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+
+<title>CNIT 133 Homework 2</title>
+
+<style>
+body {background-color: lightblue;}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Homework 2 Menu</a>
+--
+<a href="subdir/hw2pt1.html">Part 1: document.write statements</a>
+--
+<a href="subdir/hw2pt2.html">Part 2: Input 3 integers</a>
+--
+<a href="subdir/hw2pt3.html">Part 3: jQuery</a>
+--
+<a href="subdir/hw2pt4.html">Part 4: Calculation Table</a>
+</nav>
+
+
+<header>
+
+<h1>
+CNIT 133 Homework 2
+</h1>
+</header>
+
+
+<h3>Part 2: Input 3 Integers</h3>
+ 
+<script>
+function processpart2()
+
+{
+var number1, number2, number3, n1, n2, n3, sum, average, product, smallest, largest;
+
+number1 = document.forms["myform"].elements["num1"].value;
+number2 = document.forms["myform"].elements["num2"].value;
+number3 = document.forms["myform"].elements["num3"].value;
+
+n1 = parseInt(number1);
+n2 = parseInt(number2);
+n3 = parseInt(number3);
+
+sum = n1 + n2 + n3;
+avg = ((n1 + n2 + n3) / 3);
+prod = n1 * n2 * n3;
+smallest = Math.min(n1, n2, n3);
+largest = Math.max(n1, n2, n3);
+
+document.forms["myform"].elements["xyz"].value = 
+("The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + "." +
+"\nThe sum of the integers was " + sum + "." +
+"\nThe average of the integers was " + avg + "." + 
+"\nThe product of the integers was " + prod + "." + 
+"\nThe smallest of the integers was " + smallest + "." + 
+"\nThe largest of the integers was " + largest + ".");
+ }
+</script>
+
+</head>
+<body>
+<section class="body">
+<form name="myform">
+<table>
+<tr>
+<td>First Number:</td>
+<td><input type="text" name="num1" size="10"></td>
+</tr>
+<tr>
+<td>Second Number:</td>
+<td><input type="text" name="num2" size="10"></td>
+</tr>
+<tr>
+<td>Third Number:</td>
+<td><input type="text" name="num3" size="10"></td>
+</tr>
+</table>
+
+<br> Results:<br>
+
+<textarea rows="8" cols="40" name="xyz"></textarea>
+
+<br><br>
+<input type="button" onclick="processpart2()" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+
+
+<footer>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+</footer>
+
+</body>
+
+</html> 

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta name="Homework 2" content="Homework 2">
+
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+</style>
+
+<title>CNIT 133 Homework 2</title>
+
+<style>
+body {background-color: lightblue;}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="index.html">Homework 2 Menu</a>
+--
+<a href="subdir/hw2pt1.html">Part 1: document.write statements</a>
+--
+<a href="subdir/hw2pt2.html">Part 2: Input 3 integers</a>
+--
+<a href="subdir/hw2pt3.html">Part 3: jQuery</a>
+--
+<a href="subdir/hw2pt4.html">Part 4: Calculation Table</a>
+</nav>
+
+
+<header>
+
+<h1>
+CNIT 133 Homework 2
+</h1>
+</header>
+
+
+	
+<h3>Part 3: jQuery</h3>
+ 
+<script>
+function processpart3()
+
+{
+var number1, number2, number3, number4, number5, n1, n2, n3, n4, n5, sum; 
+var numZero = 0;
+var numNeg = 0;
+var numPos = 0;
+
+number1 = document.forms["part3form"].elements["num1"].value;
+number2 = document.forms["part3form"].elements["num2"].value;
+number3 = document.forms["part3form"].elements["num3"].value;
+number4 = document.forms["part3form"].elements["num4"].value;
+number5 = document.forms["part3form"].elements["num5"].value;
+
+n1 = parseInt(number1);
+n2 = parseInt(number2);
+n3 = parseInt(number3);
+n4 = parseInt(number4);
+n5 = parseInt(number5);
+
+sum = n1 + n2 + n3;
+//trying to classify the number1 as negative, postive, or zero:
+uno = Math.sign(number1);
+
+Array.from(document.getElementsByClassName("part3form")).forEach(
+                                (element, index, array) => {
+                                    if (parseInt(element.value) == 0) {
+                                        numZero += 1;
+                                    }
+                                    if (parseInt(element.value) < 0) {
+                                        numNeg += 1;
+                                    }
+                                    if (parseInt(element.value) > 0) {
+                                        numPos += 1;
+                                    }
+                                }
+                            );
+
+document.forms["part3form"].elements["part3results"].value = 
+("The inputted numbers were " + n1 + ", " + n2 + ", " + n3 + ", " + n4 + ", " + n5 + "." + 
+"\nThe number of negative numbers was " + numNeg + "." +
+"\nThe number of positive numbers was " + numPos + "." +
+"\nThe number of zeroes were " + numZero + "." +
+
+//trying to disply the number of instances number1 is negative. (or postive, or zero):
+"\nNumber one was " + uno + ".");}
+</script>
+
+</head>
+<body>
+<section class="body">
+<form name="part3form">
+	<table>
+<tr>
+<td>First Number:</td>
+<td><input type="text" name="num1" size="10"></td>
+</tr>
+<tr>
+<td>Second Number:</td>
+<td><input type="text" name="num2" size="10"></td>
+</tr>
+<tr>
+<td>Third Number:</td>
+<td><input type="text" name="num3" size="10"></td>
+</tr>
+<tr>
+<td>Fourth Number:</td>
+<td><input type="text" name="num4" size="10"></td>
+</tr>
+<tr>
+<td>Fifth Number:</td>
+<td><input type="text" name="num5" size="10"></td>
+</tr>
+	</table>
+
+<br> Results:<br>
+<textarea rows="8" cols="40" name="part3results"></textarea>
+
+<br><br>
+<input type="button" onclick="processpart3()" value="SUBMIT">
+<input type="reset" value="RESET">
+</form>
+
+
+
+<footer>
+
+<p>
+    <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+            alt="Valid CSS!" />
+    </a>
+</p>
+
+</footer>
+
+</body>
+
+</html> 
